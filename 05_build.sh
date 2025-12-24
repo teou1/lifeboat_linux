@@ -126,7 +126,7 @@ nice -19 make -s -j$THREADS
 # Get builded file
 ##########################
 
-TARGET_FILE=$(realpath ../../dist/LifeboatLinux.efi)
+TARGET_FILE="../LifeboatLinux.efi"
 cp arch/x86/boot/bzImage $TARGET_FILE
 echo "----------------------------------------------------"
 echo -e "\n$(eval $DATE_CMD) Builded successfully: $TARGET_FILE\n"
