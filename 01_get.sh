@@ -7,7 +7,7 @@ cd ./build
 
 if [ ! -d alpine-minirootfs ]; then
     # Getting the Alpine minirootfs
-    wget -c4 http://dl-cdn.alpinelinux.org/alpine/v3.23/releases/x86_64/$alpineminirootfsfile
+    wget http://dl-cdn.alpinelinux.org/alpine/v3.23/releases/x86_64/$alpineminirootfsfile
     mkdir alpine-minirootfs
     tar -C ./alpine-minirootfs -xf $alpineminirootfsfile
 fi
