@@ -18,7 +18,7 @@ KERNELPATH="linux"
 export INSTALL_MOD_PATH="../$ROOTFS/"
 
 # Build threads equall CPU cores
-THREADS=$(nproc --ignore=1)
+THREADS=$(nproc)
 DATE_CMD="date +%H:%M:%S"
 
 echo "      ____________  "
