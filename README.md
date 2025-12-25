@@ -6,6 +6,8 @@ My primary motivation was to be able to fsck the filesystem in case of, for exam
 
 You have to of course also think how you will start your efi file. You can make an efi variable, chainload from some bootloader, etc. What i personally did is installing a UEFI shell as the fallback uefi executable (the default entry in BOOT/bootx64.efi) and navigate from there to my other subfolders and efi files with simple cd and ls commands. NOTE that in an efi shell you will only have US keyboard layout!! You can get a uefi shell from every linux edk2-shell package or directly from Tianocore.
 
+Below is the original text from Hugochinchilla before my fork:
+
 ## Lifeboat Linux
 
 Live linux distro combined in one ~35MB file. Runs as a EFI binary so it should run on any UEFI computer (PC or Mac) without installation. Just copy one file to EFI system partition and boot.
