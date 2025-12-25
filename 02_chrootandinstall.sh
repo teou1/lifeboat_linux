@@ -14,7 +14,7 @@ apk add \
     openrc busybox-openrc busybox-mdev-openrc haveged \
     bash gawk grep sed util-linux unzip tar zstd mtools \
     font-terminus kbd \
-    nano vim \
+    nano net-tools pigz pixz partclone partclone-utils partimage \
     parted efibootmgr gptfdisk \
     lvm2 cryptsetup dmraid mdadm \
     e2fsprogs e2fsprogs-extra dosfstools xfsprogs btrfs-progs
@@ -22,10 +22,11 @@ apk add \
 apk add mandoc \
     util-linux-doc \
     parted-doc efibootmgr-doc dmraid-doc mdadm-doc lvm2-doc cryptsetup-doc gptfdisk-doc \
-    e2fsprogs-doc dosfstools-doc xfsprogs-doc btrfs-progs-doc
+    e2fsprogs-doc dosfstools-doc xfsprogs-doc btrfs-progs-doc net-tools-doc pigz-doc partclone-doc \
+    partclone-utils-doc partimage-doc
 
 rm /var/cache/apk/*
 
 # Make vim weight less on the final image
-rm -rf /usr/share/vim/*/doc/*
+# rm -rf /usr/share/vim/*/doc/*
 EOF
