@@ -21,6 +21,5 @@ Load a custom keymap with `loadkeys <locale>`:
  $ loadkeys es
 
 There is a README in the current dir with some helpful snippets and more information.
+It also contains list of the tools included. 
 Note that you only have wired internet support.
-For a list of the included tools cat TOOLS file in the same directory.
-
