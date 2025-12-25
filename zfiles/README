@@ -2,3 +2,12 @@
 
 See inside `/root/resources` for available manuals.
 
+List of the included tools in the current version:
+
+openrc busybox-openrc busybox-mdev-openrc haveged 
+bash gawk grep sed util-linux nano font-terminus kbd
+unzip tar zstd mtools net-tools pigz pixz 
+partclone partclone-utils partimage parted 
+efibootmgr gptfdisk 
+lvm2 cryptsetup dmraid mdadm 
+e2fsprogs e2fsprogs-extra dosfstools xfsprogs btrfs-progs
