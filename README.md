@@ -1,10 +1,22 @@
 ## Fork from Teo
 
-I wanted to compile the project myself and discovered the scripts contain many many mistakes. I fixed some of them and deleted some other files. Compilation time on a very weak Intel N6000 processor with only 4 threads is about 30 minutes. Otherwise you can download directly the executables from Hugochinchila releases, if you trust them. I have neither checked them nor tested them, since compilation from source (which you know is clean and secure) takes several minutes on a decent machine. NOTE that during compilation, you might want to kill stupid OS indexing ot tumbnailer services, like tumblerd on xfce. Otherwise the compilation time will rise significantly.
+I wanted to compile the project myself and discovered the scripts contain many many mistakes. I fixed some of them and deleted some other files. Compilation time on a very weak Intel N6000 processor with only 4 threads is about 30 minutes. Otherwise you can download directly the executables from the releases page, if you trust me. Compilation from source (which you know is clean and secure) takes several minutes on a decent machine. NOTE that during compilation, you might want to kill stupid OS indexing or tumbnailer services, like tumblerd on xfce. Otherwise the compilation time will rise significantly.
 
 My primary motivation was to be able to fsck the filesystem in case of, for example, power loss, withouth needing live usb system for this. But the "distro" includes oder filesystem and partitioning tools so can actually do more.
 
 You have to of course also think how you will start your efi file. You can make an efi variable, chainload from some bootloader, etc. What i personally did is installing a UEFI shell as the fallback uefi executable (the default entry in BOOT/bootx64.efi) and navigate from there to my other subfolders and efi files with simple cd and ls commands. NOTE that in an efi shell you will only have US keyboard layout!! You can get a uefi shell from every linux edk2-shell package or directly from Tianocore.
+
+List of the included tools in the current version:
+
+`openrc busybox-openrc busybox-mdev-openrc haveged 
+bash gawk grep sed util-linux nano font-terminus kbd
+unzip tar zstd mtools net-tools pigz pixz 
+partclone partclone-utils partimage parted 
+efibootmgr gptfdisk 
+lvm2 cryptsetup dmraid mdadm 
+e2fsprogs e2fsprogs-extra dosfstools xfsprogs btrfs-progs`
+
+
 
 Below is the original text from Hugochinchilla before my fork:
 
@@ -14,7 +26,6 @@ Live linux distro combined in one ~35MB file. Runs as a EFI binary so it should 
 
 <img width="200px" alt="Lifeboat Linux" src="lifeboat.png" />
 
-**Download:** https://github.com/hugochinchilla/lifeboat_linux/releases
 
 
 ## Motivation
