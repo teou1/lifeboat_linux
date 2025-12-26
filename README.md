@@ -1,10 +1,25 @@
 ## Fork from Teo
 
-I wanted to compile the project myself and discovered the scripts contain many many mistakes. I fixed some of them and deleted some other files. Compilation time on a very weak Intel N6000 processor with only 4 threads is about 30 minutes. Otherwise you can download directly the executables from the releases page, if you trust me. Compilation from source (which you know is clean and secure) takes several minutes on a decent machine. NOTE that during compilation, you might want to kill stupid OS indexing or tumbnailer services, like tumblerd on xfce. Otherwise the compilation time will rise significantly.
+I wanted to compile the project myself and discovered the scripts contain several errors. I fixed some of them and deleted some other files. Compilation time on a very weak Intel N6000 processor with only 4 threads is about 30 minutes. Otherwise you can download directly the executables from the releases page, if you trust me. Compilation from source (which you know is clean and secure) takes several minutes on a decent machine. NOTE that during compilation, you might want to kill stupid OS indexing or tumbnailer services, like tumblerd on xfce. Otherwise the compilation time will rise significantly.
 
 My primary motivation was to be able to fsck the filesystem in case of, for example, power loss, withouth needing live usb system for this. But the "distro" includes oder filesystem and partitioning tools so can actually do more.
 
 You have to of course also think how you will start your efi file. You can make an efi variable, chainload from some bootloader, etc. What i personally did is installing a UEFI shell as the fallback uefi executable (the default entry in BOOT/bootx64.efi) and navigate from there to my other subfolders and efi files with simple cd and ls commands. NOTE that in an efi shell you will only have US keyboard layout!! You can get a uefi shell from every linux edk2-shell package or directly from Tianocore.
+
+Alternatively, you can add it to your existing GRUB config in the file `/etc/grub.d/40_custom` and then `sudo update-grub`
+
+`menuentry "Lifeboat" {
+search --no-floppy --fs-uuid --set=root C557-4CD1
+chainloader /EFI/lifeboat/lifeboatx64.efi
+}
+`
+
+Here is how it looks booted (sorry for the quality, i will make a VM and make a screenshot there):
+
+
+![lifeboat_screen_small](https://github.com/user-attachments/assets/23a5de54-9f00-420b-a217-0a8bf5e5b1c1)
+
+
 
 List of the included tools in the current version:
 
