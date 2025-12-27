@@ -14,10 +14,10 @@ chainloader /EFI/lifeboat/lifeboatx64.efi
 }
 `
 
-Here is how it looks booted (sorry for the quality, i will make a VM and make a screenshot there):
+Here is how it looks booted 
 
 
-![lifeboat_screen_small](https://github.com/user-attachments/assets/23a5de54-9f00-420b-a217-0a8bf5e5b1c1)
+<img width="691" height="528" alt="lifeboat1" src="https://github.com/user-attachments/assets/6e1a5639-4141-4ac0-b174-ea5d84fafb8c" />
 
 
 
