@@ -17,7 +17,8 @@ apk add \
     nano net-tools pigz pixz partclone partclone-utils partimage \
     parted efibootmgr gptfdisk \
     lvm2 cryptsetup dmraid mdadm \
-    e2fsprogs e2fsprogs-extra dosfstools xfsprogs btrfs-progs
+    e2fsprogs e2fsprogs-extra dosfstools xfsprogs btrfs-progs \
+    gpm mc tmux
 
 apk add mandoc \
     util-linux-doc \
