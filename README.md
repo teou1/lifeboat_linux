@@ -33,6 +33,8 @@ e2fsprogs e2fsprogs-extra dosfstools xfsprogs btrfs-progs`
 
 Note that if you are using Refind as a bootloader, you can drop the lifeboatx64.png near the lifeboatx64.efi to have a nice icon.
 
+Note2: there is no fancy loading animation. At about 1 second, loading appears to be frozen, but the cursor blinks. Wait. In about 10 seconds the system will finish loading.
+
 Below is the original text from Hugochinchilla before my fork:
 
 ******************************
