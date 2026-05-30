@@ -11,3 +11,4 @@ partclone partclone-utils partimage parted
 efibootmgr gptfdisk 
 lvm2 cryptsetup dmraid mdadm 
 e2fsprogs e2fsprogs-extra dosfstools xfsprogs btrfs-progs
+gpm mc tmux
