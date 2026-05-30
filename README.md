@@ -31,9 +31,11 @@ efibootmgr gptfdisk
 lvm2 cryptsetup dmraid mdadm 
 e2fsprogs e2fsprogs-extra dosfstools xfsprogs btrfs-progs`
 
-
+Note that if you are using Refind as a bootloader, you can drop the lifeboatx64.png near the lifeboatx64.efi to have a nice icon.
 
 Below is the original text from Hugochinchilla before my fork:
+
+******************************
 
 ## Lifeboat Linux
 
