@@ -1,7 +1,7 @@
 #/bin/bash
 
-alpineminirootfsfile="alpine-minirootfs-3.23.2-x86_64.tar.gz"
-linuxver="linux-6.18.2"
+alpineminirootfsfile="alpine-minirootfs-3.23.4-x86_64.tar.gz"
+linuxver="linux-6.18.33"
 
 cd ./build
 
